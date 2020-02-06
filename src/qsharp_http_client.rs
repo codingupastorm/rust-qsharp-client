@@ -2,7 +2,7 @@ use std::collections::HashMap;
 use reqwest::Response;
 
 pub struct QSharpHttpClient<'a> {
-    uri: &'a str
+    pub uri: &'a str // TODO: This should really be private and come in a constructor?
 }
 
 impl QSharpHttpClient<'_> {
